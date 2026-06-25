@@ -12,6 +12,7 @@ Printable addition quizzes for math class.
 - [Make 10 Quiz](quizzes/Make%2010%20Quiz.html)
 - [Make 20 Quiz](quizzes/Make%2020%20Quiz.html)
 - [Make 50 Quiz](quizzes/Make%2050%20Quiz.html)
+- [Bridge 10 Quiz](quizzes/Bridge%2010%20Quiz.html)
 - [Times 2 Quiz](quizzes/Times%202%20Quiz.html)
 - [Times 3 Quiz](quizzes/Times%203%20Quiz.html)
 - [Times 4 Quiz](quizzes/Times%204%20Quiz.html)
