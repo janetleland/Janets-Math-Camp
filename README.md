@@ -1,35 +1,39 @@
 # Janet's Math Camp
 
-Printable addition quizzes for math class.
+Printable sample quizzes and practice quizzes for math class.
 
-## Quizzes
+## Sample Quizzes
 
-- [Quiz menu](quizzes/)
-- [Plus 6 Quiz](quizzes/Plus%206%20Quiz.html)
-- [Plus 7 Quiz](quizzes/Plus%207%20Quiz.html)
-- [Plus 8 Quiz](quizzes/Plus%208%20Quiz.html)
-- [Plus 9 Quiz](quizzes/Plus%209%20Quiz.html)
-- [Make 10 Quiz](quizzes/Make%2010%20Quiz.html)
-- [Make 20 Quiz](quizzes/Make%2020%20Quiz.html)
-- [Make 50 Quiz](quizzes/Make%2050%20Quiz.html)
-- [Bridge 10 Quiz](quizzes/Bridge%2010%20Quiz.html)
-- [Bridge 10 DD Quiz](quizzes/Bridge%2010%20DD%20Quiz.html)
-- [Addition Grandmaster Quiz](quizzes/Addition%20Grandmaster%20Quiz.html)
-- [Multiply 2-5 Quiz](quizzes/Multiply%202-5%20Quiz.html)
-- [Multiply 6-8 Quiz](quizzes/Multiply%206-8%20Quiz.html)
-- [Multiply 9-12 Quiz](quizzes/Multiply%209-12%20Quiz.html)
-- [Multiply Grandmaster Quiz](quizzes/Multiply%20Grandmaster%20Quiz.html)
-- [Times 2 Quiz](quizzes/Times%202%20Quiz.html)
-- [Times 3 Quiz](quizzes/Times%203%20Quiz.html)
-- [Times 4 Quiz](quizzes/Times%204%20Quiz.html)
-- [Times 5 Quiz](quizzes/Times%205%20Quiz.html)
-- [Times 6 Quiz](quizzes/Times%206%20Quiz.html)
-- [Times 7 Quiz](quizzes/Times%207%20Quiz.html)
-- [Times 8 Quiz](quizzes/Times%208%20Quiz.html)
-- [Times 9 Quiz](quizzes/Times%209%20Quiz.html)
-- [Times 10 Quiz](quizzes/Times%2010%20Quiz.html)
-- [Times 11 Quiz](quizzes/Times%2011%20Quiz.html)
-- [Times 12 Quiz](quizzes/Times%2012%20Quiz.html)
+- [Sample quiz menu](sample-quizzes/)
+- [Practice quiz menu](practice-quizzes/)
+
+## Sample Quiz Pages
+
+- [Plus 6 Quiz](sample-quizzes/plus-6-quiz.html)
+- [Plus 7 Quiz](sample-quizzes/plus-7-quiz.html)
+- [Plus 8 Quiz](sample-quizzes/plus-8-quiz.html)
+- [Plus 9 Quiz](sample-quizzes/plus-9-quiz.html)
+- [Make 10 Quiz](sample-quizzes/make-10-quiz.html)
+- [Make 20 Quiz](sample-quizzes/make-20-quiz.html)
+- [Make 50 Quiz](sample-quizzes/make-50-quiz.html)
+- [Bridge 10 Quiz](sample-quizzes/bridge-10-quiz.html)
+- [Bridge 10 DD Quiz](sample-quizzes/bridge-10-dd-quiz.html)
+- [Addition Grandmaster Quiz](sample-quizzes/addition-grandmaster-quiz.html)
+- [Multiply 2-5 Quiz](sample-quizzes/multiply-2-5-quiz.html)
+- [Multiply 6-8 Quiz](sample-quizzes/multiply-6-8-quiz.html)
+- [Multiply 9-12 Quiz](sample-quizzes/multiply-9-12-quiz.html)
+- [Multiply Grandmaster Quiz](sample-quizzes/multiply-grandmaster-quiz.html)
+- [Times 2 Quiz](sample-quizzes/times-2-quiz.html)
+- [Times 3 Quiz](sample-quizzes/times-3-quiz.html)
+- [Times 4 Quiz](sample-quizzes/times-4-quiz.html)
+- [Times 5 Quiz](sample-quizzes/times-5-quiz.html)
+- [Times 6 Quiz](sample-quizzes/times-6-quiz.html)
+- [Times 7 Quiz](sample-quizzes/times-7-quiz.html)
+- [Times 8 Quiz](sample-quizzes/times-8-quiz.html)
+- [Times 9 Quiz](sample-quizzes/times-9-quiz.html)
+- [Times 10 Quiz](sample-quizzes/times-10-quiz.html)
+- [Times 11 Quiz](sample-quizzes/times-11-quiz.html)
+- [Times 12 Quiz](sample-quizzes/times-12-quiz.html)
 
 ## Hosting With GitHub Pages
 

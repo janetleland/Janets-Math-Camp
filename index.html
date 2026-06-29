@@ -38,6 +38,12 @@
       font-size: 20px;
     }
 
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
     .button {
       display: inline-flex;
       align-items: center;
@@ -63,8 +69,11 @@
 <body>
   <main>
     <h1>Janet's Math Camp</h1>
-    <p>Welcome to Janet's Math Camp. Choose a printable quiz for fast addition practice.</p>
-    <a class="button" href="quizzes/index.html">Open Quizzes</a>
+    <p>Welcome to Janet's Math Camp. Choose a sample quiz or practice quiz for fast math practice.</p>
+    <div class="actions">
+      <a class="button" href="sample-quizzes/index.html">Open Sample Quizzes</a>
+      <a class="button" href="practice-quizzes/index.html">Open Practice Quizzes</a>
+    </div>
   </main>
 </body>
 </html>
