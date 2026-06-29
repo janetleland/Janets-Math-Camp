@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make 50 Practice Quiz</title>
+  <style>
+    @page {
+      size: letter;
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f2f2f2;
+      color: #000;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page {
+      width: 8.5in;
+      height: 11in;
+      margin: 0 auto;
+      padding: 0;
+      background: #fff;
+      break-after: page;
+      page-break-after: always;
+      position: relative;
+    }
+
+    .page:last-child {
+      break-after: auto;
+      page-break-after: auto;
+    }
+
+    h1 {
+      position: absolute;
+      top: 92px;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      font-size: 27px;
+      line-height: 1;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    .instructions {
+      position: absolute;
+      top: 139px;
+      left: 96px;
+      width: 720px;
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.2;
+      font-weight: 400;
+    }
+
+    .problem-columns {
+      position: absolute;
+      top: 220px;
+      left: 96px;
+      right: 96px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 54px;
+    }
+
+    .problems {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 21px;
+      line-height: 1;
+      font-weight: 400;
+    }
+
+    .problem {
+      height: 61px;
+      min-width: 90px;
+    }
+
+    @media screen {
+      .page {
+        margin: 24px auto;
+        box-shadow: 0 0 0 1px #ddd, 0 12px 32px rgba(0, 0, 0, 0.12);
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="page">
+    <h1>Make 50</h1>
+    <p class="instructions">Instructions: Write what number you can add to make 50.</p>
+    <div class="problem-columns" aria-label="Make 50 practice quiz page 1">
+      <ol class="problems" aria-label="Column 1">
+        <li class="problem">5</li>
+        <li class="problem">13</li>
+        <li class="problem">8</li>
+        <li class="problem">2</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">1</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">12</li>
+      </ol>
+      <ol class="problems" aria-label="Column 2">
+        <li class="problem">1</li>
+        <li class="problem">14</li>
+        <li class="problem">8</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+        <li class="problem">7</li>
+        <li class="problem">15</li>
+        <li class="problem">3</li>
+        <li class="problem">11</li>
+        <li class="problem">9</li>
+        <li class="problem">6</li>
+      </ol>
+      <ol class="problems" aria-label="Column 3">
+        <li class="problem">4</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+        <li class="problem">1</li>
+        <li class="problem">8</li>
+        <li class="problem">15</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+      </ol>
+      <ol class="problems" aria-label="Column 4">
+        <li class="problem">6</li>
+        <li class="problem">13</li>
+        <li class="problem">3</li>
+        <li class="problem">9</li>
+        <li class="problem">4</li>
+        <li class="problem">11</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">2</li>
+        <li class="problem">10</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page">
+    <h1>Make 50</h1>
+    <p class="instructions">Instructions: Write what number you can add to make 50.</p>
+    <div class="problem-columns" aria-label="Make 50 practice quiz page 2">
+      <ol class="problems" aria-label="Column 1">
+        <li class="problem">2</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">1</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">13</li>
+        <li class="problem">8</li>
+      </ol>
+      <ol class="problems" aria-label="Column 2">
+        <li class="problem">2</li>
+        <li class="problem">5</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">11</li>
+        <li class="problem">15</li>
+        <li class="problem">12</li>
+        <li class="problem">8</li>
+        <li class="problem">1</li>
+        <li class="problem">9</li>
+        <li class="problem">3</li>
+        <li class="problem">7</li>
+      </ol>
+      <ol class="problems" aria-label="Column 3">
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+        <li class="problem">4</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+        <li class="problem">1</li>
+        <li class="problem">8</li>
+        <li class="problem">15</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+      </ol>
+      <ol class="problems" aria-label="Column 4">
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">10</li>
+        <li class="problem">2</li>
+        <li class="problem">14</li>
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">3</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page">
+    <h1>Make 50</h1>
+    <p class="instructions">Instructions: Write what number you can add to make 50.</p>
+    <div class="problem-columns" aria-label="Make 50 practice quiz page 3">
+      <ol class="problems" aria-label="Column 1">
+        <li class="problem">2</li>
+        <li class="problem">4</li>
+        <li class="problem">1</li>
+        <li class="problem">14</li>
+        <li class="problem">12</li>
+        <li class="problem">13</li>
+        <li class="problem">11</li>
+        <li class="problem">9</li>
+        <li class="problem">7</li>
+        <li class="problem">6</li>
+        <li class="problem">5</li>
+        <li class="problem">8</li>
+      </ol>
+      <ol class="problems" aria-label="Column 2">
+        <li class="problem">2</li>
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">8</li>
+        <li class="problem">14</li>
+        <li class="problem">1</li>
+        <li class="problem">6</li>
+        <li class="problem">9</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+        <li class="problem">15</li>
+        <li class="problem">7</li>
+      </ol>
+      <ol class="problems" aria-label="Column 3">
+        <li class="problem">5</li>
+        <li class="problem">13</li>
+        <li class="problem">8</li>
+        <li class="problem">2</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">1</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">12</li>
+      </ol>
+      <ol class="problems" aria-label="Column 4">
+        <li class="problem">1</li>
+        <li class="problem">14</li>
+        <li class="problem">8</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+        <li class="problem">7</li>
+        <li class="problem">15</li>
+        <li class="problem">3</li>
+        <li class="problem">11</li>
+        <li class="problem">9</li>
+        <li class="problem">6</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page">
+    <h1>Make 50</h1>
+    <p class="instructions">Instructions: Write what number you can add to make 50.</p>
+    <div class="problem-columns" aria-label="Make 50 practice quiz page 4">
+      <ol class="problems" aria-label="Column 1">
+        <li class="problem">4</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+        <li class="problem">1</li>
+        <li class="problem">8</li>
+        <li class="problem">15</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+      </ol>
+      <ol class="problems" aria-label="Column 2">
+        <li class="problem">6</li>
+        <li class="problem">13</li>
+        <li class="problem">3</li>
+        <li class="problem">9</li>
+        <li class="problem">4</li>
+        <li class="problem">11</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">2</li>
+        <li class="problem">10</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+      </ol>
+      <ol class="problems" aria-label="Column 3">
+        <li class="problem">2</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">1</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">13</li>
+        <li class="problem">8</li>
+      </ol>
+      <ol class="problems" aria-label="Column 4">
+        <li class="problem">2</li>
+        <li class="problem">5</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">11</li>
+        <li class="problem">15</li>
+        <li class="problem">12</li>
+        <li class="problem">8</li>
+        <li class="problem">1</li>
+        <li class="problem">9</li>
+        <li class="problem">3</li>
+        <li class="problem">7</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page">
+    <h1>Make 50</h1>
+    <p class="instructions">Instructions: Write what number you can add to make 50.</p>
+    <div class="problem-columns" aria-label="Make 50 practice quiz page 5">
+      <ol class="problems" aria-label="Column 1">
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+        <li class="problem">4</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+        <li class="problem">1</li>
+        <li class="problem">8</li>
+        <li class="problem">15</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+      </ol>
+      <ol class="problems" aria-label="Column 2">
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">10</li>
+        <li class="problem">2</li>
+        <li class="problem">14</li>
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">3</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+      </ol>
+      <ol class="problems" aria-label="Column 3">
+        <li class="problem">2</li>
+        <li class="problem">4</li>
+        <li class="problem">1</li>
+        <li class="problem">14</li>
+        <li class="problem">12</li>
+        <li class="problem">13</li>
+        <li class="problem">11</li>
+        <li class="problem">9</li>
+        <li class="problem">7</li>
+        <li class="problem">6</li>
+        <li class="problem">5</li>
+        <li class="problem">8</li>
+      </ol>
+      <ol class="problems" aria-label="Column 4">
+        <li class="problem">2</li>
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">8</li>
+        <li class="problem">14</li>
+        <li class="problem">1</li>
+        <li class="problem">6</li>
+        <li class="problem">9</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+        <li class="problem">15</li>
+        <li class="problem">7</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page">
+    <h1>Make 50</h1>
+    <p class="instructions">Instructions: Write what number you can add to make 50.</p>
+    <div class="problem-columns" aria-label="Make 50 practice quiz page 6">
+      <ol class="problems" aria-label="Column 1">
+        <li class="problem">5</li>
+        <li class="problem">13</li>
+        <li class="problem">8</li>
+        <li class="problem">2</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">1</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">12</li>
+      </ol>
+      <ol class="problems" aria-label="Column 2">
+        <li class="problem">1</li>
+        <li class="problem">14</li>
+        <li class="problem">8</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+        <li class="problem">7</li>
+        <li class="problem">15</li>
+        <li class="problem">3</li>
+        <li class="problem">11</li>
+        <li class="problem">9</li>
+        <li class="problem">6</li>
+      </ol>
+      <ol class="problems" aria-label="Column 3">
+        <li class="problem">4</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+        <li class="problem">1</li>
+        <li class="problem">8</li>
+        <li class="problem">15</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+      </ol>
+      <ol class="problems" aria-label="Column 4">
+        <li class="problem">6</li>
+        <li class="problem">13</li>
+        <li class="problem">3</li>
+        <li class="problem">9</li>
+        <li class="problem">4</li>
+        <li class="problem">11</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">2</li>
+        <li class="problem">10</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page">
+    <h1>Make 50</h1>
+    <p class="instructions">Instructions: Write what number you can add to make 50.</p>
+    <div class="problem-columns" aria-label="Make 50 practice quiz page 7">
+      <ol class="problems" aria-label="Column 1">
+        <li class="problem">2</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">1</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">13</li>
+        <li class="problem">8</li>
+      </ol>
+      <ol class="problems" aria-label="Column 2">
+        <li class="problem">2</li>
+        <li class="problem">5</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">11</li>
+        <li class="problem">15</li>
+        <li class="problem">12</li>
+        <li class="problem">8</li>
+        <li class="problem">1</li>
+        <li class="problem">9</li>
+        <li class="problem">3</li>
+        <li class="problem">7</li>
+      </ol>
+      <ol class="problems" aria-label="Column 3">
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+        <li class="problem">4</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+        <li class="problem">1</li>
+        <li class="problem">8</li>
+        <li class="problem">15</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+      </ol>
+      <ol class="problems" aria-label="Column 4">
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">10</li>
+        <li class="problem">2</li>
+        <li class="problem">14</li>
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">3</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page">
+    <h1>Make 50</h1>
+    <p class="instructions">Instructions: Write what number you can add to make 50.</p>
+    <div class="problem-columns" aria-label="Make 50 practice quiz page 8">
+      <ol class="problems" aria-label="Column 1">
+        <li class="problem">2</li>
+        <li class="problem">4</li>
+        <li class="problem">1</li>
+        <li class="problem">14</li>
+        <li class="problem">12</li>
+        <li class="problem">13</li>
+        <li class="problem">11</li>
+        <li class="problem">9</li>
+        <li class="problem">7</li>
+        <li class="problem">6</li>
+        <li class="problem">5</li>
+        <li class="problem">8</li>
+      </ol>
+      <ol class="problems" aria-label="Column 2">
+        <li class="problem">2</li>
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">8</li>
+        <li class="problem">14</li>
+        <li class="problem">1</li>
+        <li class="problem">6</li>
+        <li class="problem">9</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+        <li class="problem">15</li>
+        <li class="problem">7</li>
+      </ol>
+      <ol class="problems" aria-label="Column 3">
+        <li class="problem">5</li>
+        <li class="problem">13</li>
+        <li class="problem">8</li>
+        <li class="problem">2</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">1</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">12</li>
+      </ol>
+      <ol class="problems" aria-label="Column 4">
+        <li class="problem">1</li>
+        <li class="problem">14</li>
+        <li class="problem">8</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+        <li class="problem">7</li>
+        <li class="problem">15</li>
+        <li class="problem">3</li>
+        <li class="problem">11</li>
+        <li class="problem">9</li>
+        <li class="problem">6</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page">
+    <h1>Make 50</h1>
+    <p class="instructions">Instructions: Write what number you can add to make 50.</p>
+    <div class="problem-columns" aria-label="Make 50 practice quiz page 9">
+      <ol class="problems" aria-label="Column 1">
+        <li class="problem">4</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+        <li class="problem">1</li>
+        <li class="problem">8</li>
+        <li class="problem">15</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+      </ol>
+      <ol class="problems" aria-label="Column 2">
+        <li class="problem">6</li>
+        <li class="problem">13</li>
+        <li class="problem">3</li>
+        <li class="problem">9</li>
+        <li class="problem">4</li>
+        <li class="problem">11</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">2</li>
+        <li class="problem">10</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+      </ol>
+      <ol class="problems" aria-label="Column 3">
+        <li class="problem">2</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">1</li>
+        <li class="problem">7</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">13</li>
+        <li class="problem">8</li>
+      </ol>
+      <ol class="problems" aria-label="Column 4">
+        <li class="problem">2</li>
+        <li class="problem">5</li>
+        <li class="problem">14</li>
+        <li class="problem">6</li>
+        <li class="problem">11</li>
+        <li class="problem">15</li>
+        <li class="problem">12</li>
+        <li class="problem">8</li>
+        <li class="problem">1</li>
+        <li class="problem">9</li>
+        <li class="problem">3</li>
+        <li class="problem">7</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="page">
+    <h1>Make 50</h1>
+    <p class="instructions">Instructions: Write what number you can add to make 50.</p>
+    <div class="problem-columns" aria-label="Make 50 practice quiz page 10">
+      <ol class="problems" aria-label="Column 1">
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+        <li class="problem">4</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+        <li class="problem">1</li>
+        <li class="problem">8</li>
+        <li class="problem">15</li>
+        <li class="problem">5</li>
+        <li class="problem">12</li>
+        <li class="problem">2</li>
+      </ol>
+      <ol class="problems" aria-label="Column 2">
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">10</li>
+        <li class="problem">2</li>
+        <li class="problem">14</li>
+        <li class="problem">7</li>
+        <li class="problem">11</li>
+        <li class="problem">4</li>
+        <li class="problem">9</li>
+        <li class="problem">3</li>
+        <li class="problem">13</li>
+        <li class="problem">6</li>
+      </ol>
+      <ol class="problems" aria-label="Column 3">
+        <li class="problem">2</li>
+        <li class="problem">4</li>
+        <li class="problem">1</li>
+        <li class="problem">14</li>
+        <li class="problem">12</li>
+        <li class="problem">13</li>
+        <li class="problem">11</li>
+        <li class="problem">9</li>
+        <li class="problem">7</li>
+        <li class="problem">6</li>
+        <li class="problem">5</li>
+        <li class="problem">8</li>
+      </ol>
+      <ol class="problems" aria-label="Column 4">
+        <li class="problem">2</li>
+        <li class="problem">12</li>
+        <li class="problem">5</li>
+        <li class="problem">8</li>
+        <li class="problem">14</li>
+        <li class="problem">1</li>
+        <li class="problem">6</li>
+        <li class="problem">9</li>
+        <li class="problem">11</li>
+        <li class="problem">3</li>
+        <li class="problem">15</li>
+        <li class="problem">7</li>
+      </ol>
+    </div>
+  </section>
+
+</body>
+</html>
